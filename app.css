@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+}
+
+.cakes {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cake {
+  background-color: #F0DEBF;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1em;
+  padding: 0;
+  flex: 0 0 100%;
+}
+
+.photo-container {
+  margin-right: 1em;
+  height: 48px;
+  width: 48px;
+  overflow: hidden;
+  background-color: #FFA0CD;
+}
+
+.photo {
+  width: 100%;
+  min-height: 48px;
+}
+
+.cake-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.cake-title {
+  color: #663627;
+  margin: 0;
+}
+
+.cake-desc {
+  color: #B58A63;
+  align-self: bottom;
+}
+
+@media (min-width: 768px) {
+  .cake {
+    flex: 0 0 30%;
+    flex-direction: column;
+  }
+  .cake-body {
+    padding: 8px;
+  }
+  .photo-container {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+  }
+}
+
+.spinner {
+	display: block;
+	margin: 2em auto;
+}
