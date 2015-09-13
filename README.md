@@ -3,6 +3,8 @@ bower install
 jsx --harmony --watch src/ build
 ```
 
+[Preview Cake Town](http://markysparky.github.io/cake-town/)
+
 ## TODO
 
 - Use strict mode JavaScript
