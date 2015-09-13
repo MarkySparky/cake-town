@@ -14,8 +14,8 @@ var CakeList = React.createClass({displayName: "CakeList",
 			url: this.props.url,
 			success: function (response) {
 				if (this.isMounted()) {
-					//var cakes = JSON.parse(response);
-					var cakes = response;
+					var cakes = JSON.parse(response);
+					//var cakes = response;
 					this.setState({ loading: false, cakes: cakes });
 			}
 			}.bind(this)
@@ -53,6 +53,6 @@ var CakeList = React.createClass({displayName: "CakeList",
 });
 
 React.render(
-  React.createElement(CakeList, {url: "/cake.json"}),
+  React.createElement(CakeList, {url: "https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/raw/8dd19a88f9b8d24c23d9960f3300d0c917a4f07c/cake.json"}),
   document.getElementById('container')
 );
